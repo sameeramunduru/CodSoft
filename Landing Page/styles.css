@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* General Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #444;
+    background-color: #f9f9fb;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    color: #fff;
+    width: 100%;
+    padding: 3rem;
+    /* text-align: center; */
+    position: relative;
+}
+
+header::after {
+    content: '';
+    background: url('https://source.unsplash.com/1600x600/?business,team') no-repeat center center / cover;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 3.5rem;
+    z-index: 2;
+    position: relative;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    max-width: 700px;
+    line-height: 1.5;
+    z-index: 2;
+    position: relative;
+}
+
+section {
+    width: 80%;
+    max-width: 1200px;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    position: relative;
+}
+
+.about-us img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+/* Services Section */
+/* .services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+} */
+.services h2 {
+    font-size: 2rem;
+    color: #060a0f;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .services {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px; /* Spacing between each card */
+    margin-top: 40px;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line if the screen is too small */
+  }
+  
+  .service-card {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-card img {
+    max-width: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-card {
+        width: 80%;
+    }
+}

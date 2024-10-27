@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eef2f3; /* Light background color */
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    background-color: #ffffff; /* White background for the calculator */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 320px; /* Width of the calculator */
+    text-align: center; /* Center text in the calculator */
+}
+
+h1 {
+    font-size: 28px; /* Increased size of the heading */
+    margin-bottom: 20px; /* Space between heading and input */
+    color: #333; /* Darker color for the heading */
+}
+
+#result {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 5px;
+    margin-bottom: 15px; /* Space between input and buttons */
+    padding-right: 10px;
+    background-color: #f8f9fa; /* Light gray background for the input */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Space between buttons */
+}
+
+.button {
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px; /* Rounded corners for buttons */
+    background-color: #007bff; /* Blue background for buttons */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.operator {
+    background-color: #28a745; /* Green background for operator buttons */
+}
+
+.operator:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.equals {
+    background-color: #dc3545; /* Red background for equals button */
+}
+
+.equals:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
